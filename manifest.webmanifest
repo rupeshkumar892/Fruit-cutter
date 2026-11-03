@@ -1,0 +1,17 @@
+{
+  "name": "Fruit Cutter",
+  "short_name": "Fruit Cutter",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090d12",
+  "theme_color": "#10151c",
+  "description": "Responsive fruit slicing game for browser and Android.",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
