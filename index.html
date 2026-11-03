@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#10151c">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <title>Fruit Cutter</title>
+</head>
+<body>
+  <div id="app">
+    <header class="hud">
+      <div><small>SCORE</small><b id="score">0</b></div>
+      <div><small>LEVEL</small><b id="level">1</b></div>
+      <div><small>LIVES</small><b id="lives">3</b></div>
+      <button id="pause">Ⅱ</button>
+    </header>
+    <main id="arena">
+      <div id="start" class="overlay">
+        <div class="card">
+          <div class="logo">🍉</div>
+          <h1>Fruit Cutter</h1>
+          <p>Slice the fruit. Avoid the bombs.</p>
+          <button id="play">START GAME</button>
+          <button id="install" class="secondary" hidden>INSTALL APP</button>
+        </div>
+      </div>
+      <canvas id="game"></canvas>
+      <div id="message" class="overlay hidden">
+        <div class="card">
+          <h2 id="messageTitle">Game Over</h2>
+          <p id="finalScore"></p>
+          <button id="restart">PLAY AGAIN</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
